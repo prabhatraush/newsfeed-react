@@ -11,6 +11,7 @@ function Feed(props){
                 : ""
             }
         </div>
+        
         <div className="feed-time">
             {new Date(feed.isoDate).toString().substring(0,25)}
         </div>
