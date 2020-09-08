@@ -14,10 +14,10 @@ function App() {
     <>
     <Header/>
     <Switch>
-        <Route exact path="/" >
-            <Redirect to="/home"/> 
+        <Route exact path="/home" >
+            <Redirect to="/"/> 
         </Route>
-        <Route path="/home" component={BreakingNews} />
+        <Route ecaxt path="/" component={BreakingNews} />
         <Route path="/nation" component={NationNews} />
         <Route path="/international" component={InternationalNews} />
         <Route path="/sports" component={SportsNews} />

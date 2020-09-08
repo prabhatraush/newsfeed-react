@@ -142,6 +142,7 @@ code {
   flex-direction: column;
   margin:10px;
   border-radius: 10px;
+  transition: transform .2s;
 
   .feed-img{
     overflow: hidden;
@@ -183,7 +184,7 @@ code {
   }
 
   &:hover {
-    border: 1px solid #000000;
+    transform: scale(1.06);
   }
 
 }
