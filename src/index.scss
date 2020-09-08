@@ -35,6 +35,10 @@ code {
   }
 }
 
+.show{
+  display: block;
+}
+
 .loader{
   text-align: center;
 }
@@ -158,8 +162,9 @@ code {
   }
 
   .feed-details{
-    padding: 0px 20px;
-    height: 220px;   
+    padding: 10px 20px;
+    height: 180px; 
+      
     .feed-title{
       h2{
         color: #13a897;
@@ -169,8 +174,11 @@ code {
 
     .feed-description{
       padding:10px 0px;
+      height:75px;
       font-size: 13px;
       color: #454545;
+      overflow-y: scroll;
+      font-weight:700;
     }
   }
 
