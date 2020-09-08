@@ -17,7 +17,7 @@ function App() {
         <Route exact path="/home" >
             <Redirect to="/"/> 
         </Route>
-        <Route ecaxt path="/" component={BreakingNews} />
+        <Route exact path="/" component={BreakingNews} />
         <Route path="/nation" component={NationNews} />
         <Route path="/international" component={InternationalNews} />
         <Route path="/sports" component={SportsNews} />
