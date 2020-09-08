@@ -1,8 +1,10 @@
 import React, {useState, useEffect} from 'react';
+import axios from 'axios';
 import { ScaleLoader } from 'react-spinners';
+import styled from 'styled-components';
 
 import Feed from './Feed';
-import axios from 'axios';
+
 
 const BaseUrl = 'https://newsbulletin.herokuapp.com/';
 
@@ -12,6 +14,10 @@ function FeedList(props){
     const [error, setError] = useState(false);
 
     const {Source, newsUrl, feedsTitle }= props;
+
+    const Feeds = styled.div`
+        
+    `;
 
     useEffect( ()=> {
         async function fetchNews() {

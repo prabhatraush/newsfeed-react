@@ -1,13 +1,6 @@
 import React from 'react';
 import { FaClock }  from 'react-icons/fa'
 
-function stripHtml(html)
-{
-    var tmp = document.createElement("DIV");
-    tmp.innerHTML = html;
-    console.log(tmp.textContent || tmp.innerText || "");
-    return tmp.textContent || tmp.innerText || "";
-}
 
 function Feed(props){
 
@@ -28,7 +21,7 @@ function Feed(props){
             <div className="feed-title">
                 <h2>{feed.title}</h2>
             </div>
-            <div class="feed-description">
+            <div className="feed-description">
                {feed.contentSnippet.replace( /(<([^>]+)>)/ig, '')} 
             </div>
         </div>

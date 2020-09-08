@@ -2,7 +2,7 @@ import React from 'react';
 import {Route, Switch, Redirect} from 'react-router-dom';
 
 import Header from './components/Header';
-import BreakingNews from './NewsHeadline/BreakingNews';
+import Home from './NewsHeadline/Home';
 import NationNews from './NewsHeadline/NationNews';
 import InternationalNews from './NewsHeadline/InternationalNews';
 import SportsNews from './NewsHeadline/SportsNews';
@@ -17,7 +17,7 @@ function App() {
         <Route exact path="/home" >
             <Redirect to="/"/> 
         </Route>
-        <Route exact path="/" component={BreakingNews} />
+        <Route exact path="/" component={Home} />
         <Route path="/nation" component={NationNews} />
         <Route path="/international" component={InternationalNews} />
         <Route path="/sports" component={SportsNews} />
