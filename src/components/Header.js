@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import  { Link} from 'react-router-dom';
-import {FaAlignRight} from 'react-icons/fa';
+import {FaAlignRight, FaTimes} from 'react-icons/fa';
 import styled from 'styled-components';
 
 function Header()
@@ -113,7 +113,7 @@ function Header()
             <div className="mb-icon" onClick={()=>{
                 setToggle(!toggle)
             }}>
-                < FaAlignRight />
+                {toggle ? <FaTimes/>:< FaAlignRight />}
             </div>
         </Head>
 }

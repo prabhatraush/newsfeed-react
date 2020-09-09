@@ -12,7 +12,7 @@ function Feed(props){
         box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
         display: flex;
         flex-direction: column;
-        margin:10px;
+        margin:20px;
         border-radius: 10px;
         transition: transform .2s;
 
