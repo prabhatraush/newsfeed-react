@@ -10,7 +10,7 @@ function Header()
     const Head = styled.div`
         display: flex;
         justify-content: space-between;
-        background: #0f8370;
+        background: #13a897;
         padding-left: 100px;
 
         .logo{

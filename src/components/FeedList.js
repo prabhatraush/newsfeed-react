@@ -21,12 +21,12 @@ function FeedList(props){
             grid-auto-columns: 1fr 1fr 1fr;
             grid-template-areas: 'feed feed feed';
 
-            @media screen and (max-width:800px){
+            @media screen and (max-width:1000px){
                 grid-auto-columns: 1fr 1fr;
                 grid-template-areas: 'feed feed';
             }
 
-            @media screen and (max-width:500px){
+            @media screen and (max-width:680px){
                 grid-auto-columns: 1fr;
                 grid-template-areas: 'feed';
             }

@@ -28,20 +28,22 @@ function Feed(props){
 
         .feed-time{
             font-size:8px;
-            color: rgba(48, 58, 59, 0.589);
             font-weight:700;
+            color: #e26352;
             text-align: right;
-            padding: 10px 20px;
+            padding: 15px 5px;
             margin-top:-40px;
             
             span{
-                background:#ffffffa2;
+                background:#ffffff;
                 padding: 4px 6px;
+                border-radius: 15px;
+                box-shadow: 0 1px 6px #20212447;
             }
         }
 
         .feed-details{
-            padding: 30px 20px;
+            padding: 20px;
             padding-bottom:10px;
               
             .feed-title{
