@@ -16,7 +16,24 @@ function FeedList(props){
     const {Source, newsUrl, feedsTitle }= props;
 
     const Feeds = styled.div`
+        .feedlist{
+            display: grid;
+            grid-auto-columns: 1fr 1fr 1fr;
+            grid-template-areas: 'feed feed feed';
+
+            @media screen and (max-width:800px){
+                grid-auto-columns: 1fr 1fr;
+                grid-template-areas: 'feed feed';
+            }
+
+            @media screen and (max-width:500px){
+                grid-auto-columns: 1fr;
+                grid-template-areas: 'feed';
+            }
+           
+        }
         
+
     `;
 
     useEffect( ()=> {
@@ -35,7 +52,7 @@ function FeedList(props){
 
     console.log(feeds, new Date()-2);
 
-    return <div className="feed-fetched">
+    return <Feeds>
             {/* <h2 className="feed-head">{feedsTitle ? feedsTitle :""}</h2> */}
             { feeds.length>0 ?
             <div className="feedlist"> 
@@ -48,7 +65,7 @@ function FeedList(props){
             : <div className="loader"><ScaleLoader /></div>
             }
         
-    </div>
+    </Feeds>
 }
 
 export default FeedList;

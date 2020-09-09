@@ -6,7 +6,6 @@ import styled from 'styled-components';
 function Header()
 {
     const [toggle, setToggle]= useState(false);
-    const [active, setActive] = useState(true);
 
     const Head = styled.div`
         display: flex;
@@ -87,9 +86,6 @@ function Header()
         
     `;
 
-    const show = {display:"block"};
-    const hide = {display:"none"};
-
     return <Head>
             <div className="logo">
                 <img src="logo192.png" alt="prabhu" />
@@ -97,7 +93,7 @@ function Header()
             {
                 toggle ?
                 <div className="mob-menu-items">
-                    <div className={active ?"item active":"item"}><Link to="/">Home</Link></div>
+                    <div className="item"><Link to="/">Home</Link></div>
                     <div className="item"><Link to="/nation">Nation</Link></div>
                     <div className="item"><Link to="/international">International</Link></div>
                     <div className="item"><Link to="/sports">Sports</Link></div>
@@ -106,7 +102,7 @@ function Header()
                 </div>
                 :
                 <div className="menu-items">
-                    <div className={active ?"item active":"item"}><Link to="/">Home</Link></div>
+                    <div className="item"><Link to="/">Home</Link></div>
                     <div className="item"><Link to="/nation">Nation</Link></div>
                     <div className="item"><Link to="/international">International</Link></div>
                     <div className="item"><Link to="/sports">Sports</Link></div>
