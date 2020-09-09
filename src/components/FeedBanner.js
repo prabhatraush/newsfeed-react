@@ -43,6 +43,14 @@ function FeedBanner(props){
                 padding:20px 0;
                 font-size: 23px;
                 font-weight: 700;
+
+                a{
+                    background: #ffffff;
+                    color:#e26352;
+                    padding:2px 7px;
+                    border-radius:20px;
+                    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+                 }
             }
         }
 
@@ -66,6 +74,8 @@ function FeedBanner(props){
                 .description{
                     padding:10px;
                     font-size: 16px;
+
+                   
                 }
             }
 
@@ -82,7 +92,8 @@ function FeedBanner(props){
                 <h2>{feed.title}</h2>
             </div>
             <div className="description">
-               {feed.contentSnippet.replace( /(<([^>]+)>)/ig, '')} 
+               {feed.contentSnippet.replace( /(<([^>]+)>)/ig, '')} . . 
+               <a key={feed.guid} rel="noopener noreferrer" target="_blank" href={feed.link} >और पढ़ें</a>
             </div>
         </div>
         

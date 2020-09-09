@@ -43,7 +43,7 @@ function BannerList(props){
           <Slider {...settings}>
           {feeds.length>0 
                 ? feeds.map((feed)=>{
-                return  <a key={feed.guid} rel="noopener noreferrer" target="_blank" href={feed.link} ><FeedBanner feed={feed}/> </a>
+                return  <FeedBanner feed={feed}/>
             }): ""}
           </Slider>
         </div>
