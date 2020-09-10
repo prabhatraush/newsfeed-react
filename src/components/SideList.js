@@ -29,7 +29,10 @@ function SideList(props){
         <div>
           {feeds.length>0 
                 ? feeds.map((feed)=>{
-                return  <a key={feed.guid} rel="noopener noreferrer" target="_blank" href={feed.link} ><FeedSide feed={feed}/> </a>
+                    const  date = new Date(feed.isoDate);
+                    date.setHours(date.getHours()-5);
+                    date.setMinutes(date.getMinutes()-30);
+                    return  <a key={feed.guid} rel="noopener noreferrer" target="_blank" href={feed.link} ><FeedSide feed={feed} time={date}/> </a>
             }): ""}
         </div>
       );

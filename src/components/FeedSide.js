@@ -4,7 +4,7 @@ import  styled from 'styled-components';
 
 function FeedSide(props){
 
-    const {feed} = props;
+    const {feed, time} = props;
 
     const Container = styled.div`
         background:#ffffff;
@@ -70,7 +70,7 @@ function FeedSide(props){
                 : ""
             }
             <div className="feed-time">
-                <span><FaClock/> {new Date(feed.isoDate).toString().substring(0,25)}</span>
+                <span><FaClock/> {time.toString().substring(0,25)}</span>
             </div>
         </div>
         <div className="feed-details">

@@ -5,7 +5,7 @@ import { FaClock }  from 'react-icons/fa'
 
 function FeedBanner(props){
 
-    const {feed} = props;
+    const {feed, time} = props;
 
     const Feed = styled.div`
         background-image: url(${feed.imageUrl});
@@ -93,7 +93,7 @@ function FeedBanner(props){
     
     return <Feed>
         <div className="added-time">
-            <span><FaClock/> {new Date(feed.isoDate).toString().substring(0,21)}</span>
+            <span><FaClock/> {time.toString().substring(0,21)}</span>
         </div>
         <div className="details">
             <div className="title">

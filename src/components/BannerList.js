@@ -43,7 +43,10 @@ function BannerList(props){
           <Slider {...settings}>
           {feeds.length>0 
                 ? feeds.map((feed)=>{
-                return  <FeedBanner feed={feed}/>
+                  const  date = new Date(feed.isoDate);
+                  date.setHours(date.getHours()-5);
+                  date.setMinutes(date.getMinutes()-30);
+                return  <FeedBanner feed={feed} time={date}/>
             }): ""}
           </Slider>
         </div>
