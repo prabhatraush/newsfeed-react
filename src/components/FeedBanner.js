@@ -100,7 +100,7 @@ function FeedBanner(props){
                 <h2>{feed.title}</h2>
             </div>
             <div className="description">
-               {feed.contentSnippet.replace( /(<([^>]+)>)/ig, '')} . .  
+               {feed.contentSnippet.replace( /(<([^>]+)>)/ig, '').substring(0, 1500)} . .  
                <a key={feed.guid} rel="noopener noreferrer" target="_blank" href={feed.link} >और पढ़ें</a>
             </div>
         </div>
