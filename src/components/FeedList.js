@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import Feed from './Feed';
 
 
-const BaseUrl = 'https://newsbulletin.herokuapp.com/';
+const BaseUrl = process.env.REACT_APP_API;
 
 function FeedList(props){
 

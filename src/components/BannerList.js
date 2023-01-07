@@ -4,7 +4,7 @@ import Slider from 'react-slick';
 
 import FeedBanner from './FeedBanner';
 
-const BaseUrl = 'https://newsbulletin.herokuapp.com/';
+const BaseUrl = process.env.REACT_APP_API;
 
 function BannerList(props){
 

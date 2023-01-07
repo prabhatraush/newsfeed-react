@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import FeedSide from './FeedSide';
 
-const BaseUrl = 'https://newsbulletin.herokuapp.com/';
+const BaseUrl = process.env.REACT_APP_API;
 
 function SideList(props){
 
